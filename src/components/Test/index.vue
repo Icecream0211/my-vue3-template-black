@@ -28,14 +28,12 @@ onMounted(() => {
     method: 'post',
     data: {
       username: 'admin',
-      password: '123456'
-    }
-  }).then(res => {
+      password: '123456',
+    },
+  }).then((res) => {
     console.log(res);
   });
-
 });
-
 </script>
 <style scoped lang="scss">
 .card {
