@@ -12,4 +12,23 @@ export default defineConfig({
       '@': path.resolve('./src'),
     },
   },
+  server: {
+    // 配置代理,可以配置多个地址
+    proxy: {
+      '/api': {
+        target: 'http://localhost:3000',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api/, ''),
+      },
+      '/cci': {
+        target: 'ws://localhost:3000',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/cci/, ''),
+      },
+      '/ws': {
+        target: 'ws://localhost:3000',
+        changeOrigin: true,
+      },
+    },
+  },
 });
