@@ -21,8 +21,9 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true,
-    "baseUrl": "./",//解析非相对模块的基地址，默认为当前目录
-    "paths": { // 路径映射，相对baseUrl
+    "baseUrl": "./", //解析非相对模块的基地址，默认为当前目录
+    "paths": {
+      // 路径映射，相对baseUrl
       "@/*": ["src/*"]
     }
   },
