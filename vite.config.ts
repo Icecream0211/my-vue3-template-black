@@ -7,14 +7,13 @@ import { createSvgIconsPlugin } from 'vite-plugin-svg-icons';
 // @ts-ignore
 import path from 'path';
 
-
 export default ({ command }: ConfigEnv): UserConfigExport => {
   return {
     plugins: [
       vue(),
       viteMockServe({
         mockPath: 'mock',
-        localEnabled: command === 'serve',//保证开发阶段可以使用mock接口
+        localEnabled: command === 'serve', //保证开发阶段可以使用mock接口
         enable: true,
       }),
       createSvgIconsPlugin({
@@ -56,5 +55,5 @@ export default ({ command }: ConfigEnv): UserConfigExport => {
         },
       },
     },
-  }
+  };
 };
