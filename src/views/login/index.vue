@@ -1,8 +1,5 @@
 <template>
-<div>登录页面
-</div>
+  <div>登录页面</div>
 </template>
-<script setup lang="ts">
-</script>
-<style scoped lang="scss">
-</style>
+<script setup lang="ts"></script>
+<style scoped lang="scss"></style>

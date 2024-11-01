@@ -1,8 +1,5 @@
 <template>
-<div>Home
-</div>
+  <div>Home</div>
 </template>
-<script setup lang="ts">
-</script>
-<style scoped lang="scss">
-</style>
+<script setup lang="ts"></script>
+<style scoped lang="scss"></style>

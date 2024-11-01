@@ -16,13 +16,12 @@
     <h1>全局样式测试</h1>
   </div>
 
-  <hr>
+  <hr />
 
   <div>
     <h1>router测试</h1>
     <router-view></router-view>
   </div>
-
 </template>
 <script setup lang="ts">
 //封装全局组件注册后，不需要单独引入
