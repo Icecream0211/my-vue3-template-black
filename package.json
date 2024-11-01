@@ -6,9 +6,9 @@
   "scripts": {
     "dev": "vite --open",
     "build": "vue-tsc -b && vite build",
-    "build:test":"vue-tsc && vite build --mode test",
-    "build:pro" :"vue-tsc && vite build --mode production",
-    "preview":"vite preview",
+    "build:test": "vue-tsc && vite build --mode test",
+    "build:pro": "vue-tsc && vite build --mode production",
+    "preview": "vite preview",
     "lint": "eslint src",
     "fix": "eslint src --fix",
     "format": "prettier --write \"./**/*.{html,vue,ts,js,json,md}\"",
@@ -17,7 +17,6 @@
     "prepare": "husky install",
     "commitlint": "commitlint --config commitlint.config.cjs -e -V",
     "preinstall": "node ./scripts/preinstall.js"
-
   },
   "dependencies": {
     "vue": "^3.5.12"
