@@ -4,8 +4,8 @@ module.exports = {
     rules: {
         'type-enum': [2, 'always', ['feat', 'fix', 'docs', 'style', 'refactor', 'test','pref', 'chore', 'revert','build']],
         'type-case':[0],
-        'type-empty': [2, 'never'],
-        'scope-empty': [2, 'never'],
+        'type-empty': [0],
+        'scope-empty': [0],
         'scope-case': [0],
         'subject-full-stop': [2, 'never'],
 
