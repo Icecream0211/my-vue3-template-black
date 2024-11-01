@@ -10,4 +10,6 @@ console.log(import.meta.env.VITE_SERVE); // undefined
 
 const app = createApp(App);
 app.use(gloalComponent);
+//引入模板全局样式
+import '@/styles/index.scss';
 app.mount('#app');
