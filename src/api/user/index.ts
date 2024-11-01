@@ -9,9 +9,8 @@ enum API {
   USER_INFO_URL = '/user/info',
   MODIFY_USER_URL = '/user/modifyUser',
   ADD_USER_URL = '/user/addUser',
-  LOGOUT_URL = '/user/logout'
+  LOGOUT_URL = '/user/logout',
 }
-
 
 export const login = (data: LoginFormData) =>
   request.post<any, LoginResponseData>(API.LOGIN_URL, data);

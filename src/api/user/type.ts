@@ -1,9 +1,8 @@
 export interface ResponseData {
-    code?: number
-    message?: string
-    ok?: boolean
-  }
-  
+  code?: number;
+  message?: string;
+  ok?: boolean;
+}
 
 export interface LoginFormData {
   username: string;
@@ -15,11 +14,11 @@ export interface LoginResponseData extends ResponseData {
 }
 
 export interface UserInfoResponseData extends ResponseData {
-    data: {
-      routes: string[]
-      buttons: string[]
-      roles: string[]
-      name: string
-      avatar: string
-    }
-  }
+  data: {
+    routes: string[];
+    buttons: string[];
+    roles: string[];
+    name: string;
+    avatar: string;
+  };
+}
