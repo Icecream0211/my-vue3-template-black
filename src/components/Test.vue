@@ -11,19 +11,17 @@
   <p>使用封装后的 SvgIcon 组件</p>
   <SvgIcon name="message" />
   <SvgIcon name="vue" />
-  <hr>
+  <hr />
   <div class="card">
-    <h1 >全局样式测试</h1>
+    <h1>全局样式测试</h1>
   </div>
-
 </template>
 <script setup lang="ts">
 //封装全局组件注册后，不需要单独引入
 //import SvgIcon from '@/components/SvgIcon/index.vue';
 </script>
 <style scoped lang="scss">
-.card{
-    color: red;
+.card {
+  color: red;
 }
-
 </style>
