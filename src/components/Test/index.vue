@@ -19,6 +19,23 @@
 <script setup lang="ts">
 //封装全局组件注册后，不需要单独引入
 //import SvgIcon from '@/components/SvgIcon/index.vue';
+import { onMounted } from 'vue';
+import request from '@/utils/request';
+
+onMounted(() => {
+  request({
+    url: '/api/user/login',
+    method: 'post',
+    data: {
+      username: 'admin',
+      password: '123456'
+    }
+  }).then(res => {
+    console.log(res);
+  });
+
+});
+
 </script>
 <style scoped lang="scss">
 .card {

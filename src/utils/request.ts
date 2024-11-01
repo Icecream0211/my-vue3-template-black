@@ -20,7 +20,7 @@ request.interceptors.request.use((config) => {
 //响应拦截器
 request.interceptors.response.use(
   (res) => {
-    return res;
+    return res.data;
   },
   (error) => {
     let message = '';
