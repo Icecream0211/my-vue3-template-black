@@ -1,11 +1,19 @@
 import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
+import {createSvgIconsPlugin} from 'vite-plugin-svg-icons';
 //第一，引入path;node平台引入的模块，可以获得文件夹路径
+// @ts-ignore
 import path from 'path';
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [vue()],
+  plugins: [
+    vue(), 
+    createSvgIconsPlugin({
+    iconDirs: [path.resolve(process.cwd(), 'src/assets/icons')],
+    symbolId: 'icon-[dir]-[name]',
+  })
+  ],
   resolve: {
     //第二，配置别名
     alias: {
