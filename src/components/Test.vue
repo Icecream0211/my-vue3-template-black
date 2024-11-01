@@ -10,8 +10,10 @@
   <hr />
   <p>使用封装后的 SvgIcon 组件</p>
   <SvgIcon name="message" />
+  <SvgIcon name="vue" />
 </template>
 <script setup lang="ts">
-import SvgIcon from '@/components/SvgIcon/index.vue';
+//封装全局组件注册后，不需要单独引入
+//import SvgIcon from '@/components/SvgIcon/index.vue';
 </script>
 <style scoped lang="scss"></style>
