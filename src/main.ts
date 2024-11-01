@@ -7,6 +7,10 @@ const app = createApp(App);
 app.use(ElementPlus, {
   locale: zhCn,
 });
+
+console.log(import.meta.env);
+console.log(import.meta.env.VITE_APP_BASE_API);
+console.log(import.meta.env.VITE_SERVE);
 app.mount('#app');
 
 //@ts-ignore  忽略ts校验
