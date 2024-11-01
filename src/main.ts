@@ -8,6 +8,16 @@ console.log(import.meta.env);
 console.log(import.meta.env.VITE_APP_BASE_API); // "123"
 console.log(import.meta.env.VITE_SERVE); // undefined
 
+import axios from 'axios';
+axios({
+    url:'/api/user/login',
+    method:'post',
+    data:{
+        username:'admin',
+        password:'123456'
+    }
+});
+
 const app = createApp(App);
 app.use(gloalComponent);
 //引入模板全局样式
