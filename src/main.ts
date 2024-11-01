@@ -10,12 +10,12 @@ console.log(import.meta.env.VITE_SERVE); // undefined
 
 import axios from 'axios';
 axios({
-    url:'/api/user/login',
-    method:'post',
-    data:{
-        username:'admin',
-        password:'123456'
-    }
+  url: '/api/user/login',
+  method: 'post',
+  data: {
+    username: 'admin',
+    password: '123456',
+  },
 });
 
 const app = createApp(App);
