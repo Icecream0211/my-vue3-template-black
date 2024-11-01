@@ -36,24 +36,25 @@ export default ({ command }: ConfigEnv): UserConfigExport => {
         '@': path.resolve('./src'),
       },
     },
-    server: {
-      // 配置代理,可以配置多个地址
-      proxy: {
-        '/api': {
-          target: 'http://localhost:3000',
-          changeOrigin: true,
-          rewrite: (path) => path.replace(/^\/api/, ''),
-        },
-        '/cci': {
-          target: 'ws://localhost:3000',
-          changeOrigin: true,
-          rewrite: (path) => path.replace(/^\/cci/, ''),
-        },
-        '/ws': {
-          target: 'ws://localhost:3000',
-          changeOrigin: true,
-        },
-      },
-    },
+    //和后端真实接口联调的时候打开，调试阶段使用mock接口
+    // server: {
+    //   // 配置代理,可以配置多个地址
+    //   proxy: {
+    //     '/api': {
+    //       target: 'http://localhost:3000',
+    //       changeOrigin: true,
+    //       rewrite: (path) => path.replace(/^\/api/, ''),
+    //     },
+    //     '/cci': {
+    //       target: 'ws://localhost:3000',
+    //       changeOrigin: true,
+    //       rewrite: (path) => path.replace(/^\/cci/, ''),
+    //     },
+    //     '/ws': {
+    //       target: 'ws://localhost:3000',
+    //       changeOrigin: true,
+    //     },
+    //   },
+    // },
   };
 };

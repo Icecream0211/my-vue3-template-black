@@ -8,7 +8,7 @@
 import axios from 'axios';
 //创建axios实例(基础配置，比如：基础路径，超时时间等)
 let request = axios.create({
-  baseURL: import.meta.env.BASE_URL, //根据实际项目中的路径，进行配置文件修改
+  baseURL: import.meta.env.VITE_APP_BASE_API, //根据实际项目中的路径，进行配置文件修改
   timeout: 5000, //请求超时时间
 });
 
